@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg936\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Input File Requirements:\
+\
+Base Dictionary(DictFile): count+'\\t'+pw 
+\f1 \'a3\'a8
+\f0 e.g.:basic_dic.txt
+\f1 \'a3\'a9
+\f0 \
+\
+Training Dictionary(TrainFile): count+'\\t'+pw 
+\f1 \'a3\'a8
+\f0 e.g.:train_dic.txt
+\f1 \'a3\'a9
+\f0 \
+\
+Test Set(TestFile): count+'\\t'+pw 
+\f1 \'a3\'a8
+\f0 e.g.:test_set.txt
+\f1 \'a3\'a9
+\f0 \
+\
+\
+\
+Output File
+\f1 \'a3\'ba
+\f0 \
+\
+Score File(ScoreFile): pw+'\\t'+PSMScore (e.g.:PSM_result.txt)\
+\
+\
+\
+Running Steps
+\f1 \'a3\'ba
+\f0 \
+\
+In the current directory of the Linux system(../fuzzy_PSM test)\
+\
+1.Running Format
+\f1 \'a3\'ba
+\f0 \
+./fuzzypcfg_all_pw DictFile TrainFile TestFile ScoreFile\
+\
+2.Test Case
+\f1 \'a3\'ba
+\f0 \
+./fuzzypcfg_all_pw files/basic_dic.txt files/train_dic.txt files/test_set.txt files/PSM_result.txt\
+\
+3.Test Results
+\f1 \'a3\'ba
+\f0 \
+The PSM score of the test set will be output to the score file in the format pw+'\\t'+strength. The output file is in the \'91files\'92 directory.(PSM_result.txt)\
+}
